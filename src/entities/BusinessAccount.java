@@ -26,5 +26,11 @@ public class BusinessAccount extends Account {
 			balance += amount - 10.0; //aqui não dá erro porque balance esta como protected			
 		}
 	}
+	
+	@Override
+	public void withdraw(Double amount) {
+		super.withdraw(amount);
+		balance -= 2.0;
+	}
 
 }
